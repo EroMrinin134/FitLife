@@ -1,4 +1,5 @@
-import math, sys
+import math
+import sys
 
 # Константы.
 WATER_PER_KG = 30
@@ -17,7 +18,6 @@ def input_user_name():
     - имя не будет пустой строкой
     - имя будет отформатированно
     """
-
     while True:
         user_name = input("Введите ваше имя: ")
 
@@ -26,6 +26,7 @@ def input_user_name():
             continue
 
         return user_name.title()
+
 
 def input_user_age():
     """
@@ -54,6 +55,7 @@ def input_user_age():
 
         return user_age
 
+
 def input_user_weight(min_believable_value = None):
     """
     Запрашивает и возвращает вес пользователя (в кг).
@@ -64,7 +66,6 @@ def input_user_weight(min_believable_value = None):
     - вес будет обычным числом (не NaN или бесконечность)
     - вес будет положительным числом (> 0)
     """
-
     while True:
         user_weight = input("Введите ваш вес (в кг): ")
 
@@ -95,6 +96,7 @@ def input_user_weight(min_believable_value = None):
 
         return user_weight
 
+
 def input_user_height(min_believable_value = None):
     """
     Запрашивает и возвращает рост пользователя (в метрах).
@@ -105,7 +107,6 @@ def input_user_height(min_believable_value = None):
     - рост будет обычным числом (не NaN или бесконечность)
     - рост будет положительным числом (> 0)
     """
-
     while True:
         user_height = input("Введите ваш рост (в метрах): ")
 
@@ -135,6 +136,7 @@ def input_user_height(min_believable_value = None):
             continue
 
         return user_height
+
 
 # Сама программа.
 sys.stdin.reconfigure(encoding='utf-8')
