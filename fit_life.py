@@ -1,7 +1,6 @@
 import math
 import sys
 
-
 WATER_PER_KG = 30
 ML_TO_L = 0.001
 
