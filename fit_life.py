@@ -1,14 +1,14 @@
 import math
 import sys
 
-# Константы.
+
 WATER_PER_KG = 30
 ML_TO_L = 0.001
 
 MIN_BELIEVABLE_USER_WEIHGT = 3
 MIN_BELIEVABLE_USER_HEIGHT = 0.5
 
-# Функции.
+
 def input_user_name():
     """
     Запрашивает и возвращает имя пользователя.
@@ -56,7 +56,7 @@ def input_user_age():
         return user_age
 
 
-def input_user_weight(min_believable_value = None):
+def input_user_weight(min_believable_value=None):
     """
     Запрашивает и возвращает вес пользователя (в кг).
     Производит несколько запросов в случае некорретно введённых данных.
@@ -97,7 +97,7 @@ def input_user_weight(min_believable_value = None):
         return user_weight
 
 
-def input_user_height(min_believable_value = None):
+def input_user_height(min_believable_value=None):
     """
     Запрашивает и возвращает рост пользователя (в метрах).
     Производит несколько запросов в случае некорретно введённых данных.
@@ -138,7 +138,6 @@ def input_user_height(min_believable_value = None):
         return user_height
 
 
-# Сама программа.
 sys.stdin.reconfigure(encoding='utf-8')
 sys.stdout.reconfigure(encoding='utf-8')
 
